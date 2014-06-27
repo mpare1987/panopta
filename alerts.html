@@ -1,0 +1,139 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<title>Monitoring Dashboard | Panopta </title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/icons.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+	<div class="proto-wrap">
+		<div class="app-wrapper">
+			<header>
+				<nav>
+					<div class="header-nav">
+
+					<!-- Page Specific back arrow on internal, blank on home -->
+						<div class="backArrow float-l">
+							<a href="#" rel="prev"><i class="icon icon-arrow-left"> </i></a>
+						</div>
+					<!-- End Back Arrow -->
+
+						<div class="logo">
+							<img src="assets/images/logo.svg" alt="Panopta Logo">
+
+						</div>
+
+						<div class="settings float-r">
+							<a href="#"><i class="icon icon-cog"></i></a>
+
+						</div>
+
+				</div>
+				</nav>
+
+			</header>
+		<main id="alerts">
+			<div class="container">
+							<!-- If No Alerts -->
+<!-- 								<div class="no-alerts">
+									<h2>A-Okay</h2>
+									<p>You have no active alerts!</p>
+								</div> -->
+							<!-- End No Alerts -->
+
+							<!-- If Alerts -->
+
+				<!-- 			<h2 class="page-title"></h2>
+				 -->
+	 				<a href="#">
+	 					<!--link to page for associated server -->
+					<div class="alert-box outage">
+						<div class="swipeTab"><div class="arrow"></div></div>
+						<h3 class="nickName">Mike's Portfolio Server <span class="ipAddress">(173.236.192.30)</span></h3>
+						<div class="alert-meta">
+							<span class="alertType icon icon-warning">Outage</span>
+							<span class="sep"> - </span>
+							<span class="duration">11 hours 47 minutes ago</span>
+						</div>
+
+					</div>
+					</a>
+
+					<a href="#">
+	 					<!--link to page for associated server -->
+
+						<div class="alert-box critical">
+							<div class="swipeTab"><div class="arrow"></div></div>
+							<!--
+							Critical warnings are when resources being monitored
+							(e.g. memory, CPU load) pass a manually set threshold. For
+							reference there is one set on my account for when more than
+							2000kb of RAM is being used for a duration of longer than 5min.
+							-->
+							<h3 class="nickName">Mike's Portfolio Server <span class="ipAddress">(173.236.192.30)</span></h3>
+
+							<div class="alert-meta">
+								<span class="alertType icon icon-warning">Critical Warning</span>
+								<span class="sep"> - </span>
+								<span class="duration">11 hours 47 minutes ago</span>
+							</div>
+						</div>
+
+					</a>
+
+	 				<a href="#">
+	 					<!--link to page for associated server -->
+						<div class="alert-box warning">
+							<div class="swipeTab"><div class="arrow"></div></div>
+
+							<!--
+							Warnings are when resources being monitored
+							(e.g. memory, CPU load) pass a manually set threshold. For
+							reference there is one set on my account for when more than
+							1000kb of RAM is being used for a duration of longer than 5min.
+							-->
+							<h3>Mike's Portfolio Server</h3>
+							<div class="alert-meta">
+								<span class="alertType icon icon-warning">Warning</span>
+								<span class="sep"> - </span>
+								<span class="duration">11 hours 47 minutes ago</span>
+							</div>
+						</div>
+					</a>
+				<!-- End If Alerts -->
+
+			</div>
+		</main>
+
+		<footer>
+
+			<nav class="row footer-wrap">
+				<div class="footer-nav">
+					<div class="alerts">
+						<a href="#"><i class="icon icon-warning"></i></a>
+					</div>
+
+					<div class="servers">
+						<a href="#"><i class="icon icon-folder"></i></a>
+					</div>
+
+					<div class="notifications">
+						<a href="#"><i class="icon icon-clock"></i></a>
+					</div>
+				</div>
+
+			</nav>
+
+		</footer>
+	</div><!-- End App Wrapper -->
+</div>
+	</body>
+
+</html>
