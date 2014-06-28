@@ -282,6 +282,9 @@ Folder States
 	display:block;
 }
 
+.serverGroup.active:hover .subgroup .server {display:none;}
+.serverGroup.active:hover .subgroup:hover .server {display:block;}
+
 /**************************
 Notifications
 **************************/
