@@ -34,7 +34,7 @@ p, span, h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 .no-padding {padding:0!important;}
-.no-margin: {margin:0!important;}
+.no-margin {margin:0!important;}
 
 /*********************
 Buttons
@@ -80,7 +80,7 @@ Alert Box
 *********************/
 .alert-box {
 	padding:.5em .5em .5em 1em;
-	margin-bottom:1em;
+	margin-bottom:.5em;
 	background:#fff;
 	position: relative;
 }
@@ -342,3 +342,24 @@ Schedule Box
 	font-weight:600;
 	text-align:center;
 }
+
+/*********************
+Single Server
+*********************/
+
+.singleAlert-list .alert-meta {
+	display:inline-block;
+	max-width:90%;
+}
+
+.alert-box .export {
+	display:inline-block;
+	color:#fba32f;
+	font-size:1.25em;
+	float:right;
+}
+
+.attachedServers h5 {
+	margin: 1em 0 .25em 0;
+}
+

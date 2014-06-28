@@ -41,47 +41,70 @@
 			</header>
 		<main>
 
-		<!--
-			1) All Ongoing Alerts
-			2) Server Details
-			3) Notification Schedule
-			4) Configured Metrics (response time, uptime, etc.)
-			5) simulate Outage
-		-->
-		<section class="singleAlert-list"
-			<div class="singleAlert">
+			<!--
+				1) All Ongoing Alerts
+				2) Server Details
+				3) Notification Schedule
+				4) Configured Metrics (response time, uptime, etc.)
+				5) simulate Outage
+			-->
+			<div class="container">
+				<section class="singleAlert-list">
 
-				<div class="alertType">
-				<!-- Type of Alert -->
+						<div class="alert-box outage">
+							<div class="alert-meta">
+								<span class="alertType icon icon-warning">Outage</span>
+								<span class="sep"> - </span>
+								<span class="duration">11 hours 47 minutes ago</span>
+							</div>
+
+							<div class="export">
+						<!-- Button to export outage logs/detail to email -->
+								<span class="icon icon-out"></span>
+							</div>
+
+						</div>
+
+						<div class="alert-box outage">
+							<div class="alert-meta">
+								<span class="alertType icon icon-warning">Outage</span>
+								<span class="sep"> - </span>
+								<span class="duration">11 hours 47 minutes ago</span>
+							</div>
+
+							<div class="export">
+						<!-- Button to export outage logs/detail to email -->
+								<span class="icon icon-out"></span>
+							</div>
+
+						</div>
+
+
+				</section>
+				<section class="serverConfig">
+					<div class="content-box">
+						<p><strong>Server Configuration</strong>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</p>
+					</div>
+
+				</section>
+
+				<div class="notificationSchedule">
+					<!-- Link to view notification Schedule -->
+					<div class="schedule content-box">
+						<p class="title">Basic Notification Schedule</p>
+					</div>
+
 				</div>
 
-				<div class="serviceAffected">
-				<!-- service which caused the outage -->
+				<section class="serverMetrics">
+					<!-- Display all available real time server data here (e.g. uptime, response time, and other configured services like RAM monitoring) -->
 
-				</div>
-
-				<div class="export">
-				<!-- Button to export outage logs/detail to email -->
-				</div>
-
-				</div>
-
-		</section>
-		<section class="serverDetail">
-			<!-- Vitals (so to speak) of the server -->
-
-		</section>
-
-		<div class="notificationSchedule">
-			<!-- Link to view notification Schedule -->
-		</div>
-
-		<section class="serverMetrics">
-			<!-- Display all available real time server data here (e.g. uptime, response time, and other configured services like RAM monitoring) -->
-
-		</section>
-		<div class="simOutage">
-			<!-- Press Button to Simulate Outage -->
+				</section>
+			<div class="simOutage">
+				<!-- Press Button to Simulate Outage -->
+			</div>
 		</div>
 		</main>
 
