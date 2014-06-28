@@ -37,6 +37,17 @@ p, span, h1,h2,h3,h4,h5,h6 {
 .no-margin {margin:0!important;}
 
 /*********************
+Grid Styles
+*********************/
+
+.one-third {
+	float:left;	width:33.3333333333%;
+}
+.one-half {
+	display:inline-block;
+	width:49%;
+}
+/*********************
 Buttons
 *********************/
 .button {
@@ -56,11 +67,6 @@ Buttons
 }
 .button-grey {
 	background:#666;
-}
-
-.half-width {
-	display:inline-block;
-	width:49%;
 }
 
 /*********************
@@ -343,6 +349,19 @@ Schedule Box
 	text-align:center;
 }
 
+.scheduleDetail > * {
+	font-size:.85em;
+}
+
+.schedule.content-box {
+	background:#7fb2b2;
+	color:#fff;
+	border:0;
+	border-radius:5px;
+	padding:.1em 0;
+
+}
+
 /*********************
 Single Server
 *********************/
@@ -350,6 +369,12 @@ Single Server
 .singleAlert-list .alert-meta {
 	display:inline-block;
 	max-width:90%;
+}
+
+.ip {
+	color:#a9aaaa;
+	font-weight:400;
+	padding-bottom:.75em;
 }
 
 .alert-box .export {
@@ -361,5 +386,9 @@ Single Server
 
 .attachedServers h5 {
 	margin: 1em 0 .25em 0;
+}
+
+.serverConfig > * {
+	font-size:.85em;
 }
 

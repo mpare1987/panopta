@@ -81,7 +81,6 @@ header {
 	color:#fba32f;
 }
 
-
 .header-nav .logo img{
 	max-width:40px;
 	width:auto;
@@ -144,28 +143,23 @@ footer i {
 	font-size:26px;
 }
 
-.footer-wrap {
-	width:75%;
-}
-
 .footer-wrap, .footer-nav {
 	margin:0 auto;
 	text-align:center;
 }
 
-.footer-nav > * {
-	display:inline-block;
+.footer-nav div {
+	padding:9px 0;
+	border-right: 1px solid #E3952E;
 }
-
-.footer-nav {
-	position:relative;
-	top:10px;
+.footer-nav div:last-child {
+	border-right:0;
+}
+.footer-nav div.active {
+	background:#E3952E;
 }
 .footer-nav img {
 	width:55%;
 }
 
-.servers {
-	padding: 0 24%;
-}
 
