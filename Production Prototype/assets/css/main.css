@@ -13,25 +13,13 @@
 	padding: 0px 0px 10px 0px;
 	margin-bottom: 15px;
 }
-.outage-on {
-	color: #fff;
-	background: red;
-	padding: 1px 1px 1px 3px;
-	border-radius: 5px;
-}
+
 .notify-count {
 	margin-top:0px;
 	margin-bottom:1px;
 	text-align: center;
 	font-size: 1.1em;
 	font-weight: bold;
-}
-.outage-title {
-	font-size: 1.1em;
-	font-weight: bold;
-	text-align: center;
-	padding:0;
-	margin:0;
 }
 
 .outage-over {
@@ -45,12 +33,12 @@
 	text-transform: capitalize;
 }
 .total-outages {
-	font-size: .9em;
+	margin-top: 0;
+	font-size:.85em;
 	text-align: center;
-	padding:0;
-	margin-top: 2px;
-	font-weight: bold;
-	color: red;
+	font-weight: 600;
+	color: #b94a48;
+	margin-bottom: 1em;
 }
 .webaddress {
 	padding-left: 0px;
@@ -60,11 +48,6 @@
 #sminfo {
 	font-size: .8em;
 	color: black;
-}
-
-.outage-info {
-	font-size: .85em;
-	padding: 0px 1px 0px 1px;
 }
 
 .proto-wrap {
@@ -110,6 +93,7 @@ padding-left:0;
 	margin-top:0;
 	margin-bottom:.5em;
 	font-weight:800;
+	font-size:20px;
 }
 
 .icon:before {
@@ -202,7 +186,7 @@ footer {
 	bottom: 0;
 	background:#fba32f;
 	box-shadow: 0px -1px 1px #ddd;
-	z-index:2; /* In Front of Main */
+	z-index:3; /* In Front of Main */
 }
 
 footer i {
