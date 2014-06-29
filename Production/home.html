@@ -1,0 +1,50 @@
+
+		<div ng-hide="val" id="spacer">
+			<div class="loading bar">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+
+	<main id="alerts" ng-show="active">
+		<div class="container">
+
+			<h3 class="page-title total-outages"> {{total}} Active Alerts </h3>
+			 <div ng-repeat="alert in alerts">
+
+<!-- {{((alert.url).split("").reverse().join("")).substring(0,9)}} -->
+<!--  				<a href="
+ 				#/single-alert/{{(alert.url).slice(-9)}}
+ 				"> -->
+ 				<a href="#/single-server">
+ 					<!--link to page for associated server -->
+
+				<div class="alert-box outage">
+					<div class="swipeTab"><div class="arrow"></div></div>
+					<h3 class="nickName">{{alert.server_name}}<span class="ipAddress">{{alert.server_fqdn}}</span></h3>
+
+						<div class="alert-meta">
+								<span class="alertType icon icon-warning">{{alert.type | lowercase }}</span>
+								<span class="sep">-</span>
+								<span class="duration">{{getDuration(alert.start_time, alert.end_time)}}</span>
+						</div>
+
+				</div>
+
+				</a>
+			  </div>
+		</div>
+
+	</main>
+	<main class="no-alerts" ng-show="none">
+		<div class="no-alerts">
+		<h2>A-Okay</h2>
+		<p>You have no active alerts!</p>
+		</div>
+	</main>
